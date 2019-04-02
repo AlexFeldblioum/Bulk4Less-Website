@@ -1,0 +1,142 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* General*/
+
+h1{}
+h2{}
+h3{
+    color:rgba(0, 0, 0,0.7);
+    font-size: 2em;
+}
+h4{}
+h5{}
+
+p{
+    color:rgba(0, 0, 0,0.7);
+    font-weight: bold; 
+}
+
+body{
+    background-color: rgb(127, 127, 187);
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+/***************** Header *********************/
+
+header{
+    background: #777777 url(../images/Industrial-background.png) center no-repeat;
+    height: 200px;
+    position: relative;
+}
+
+header #logo{
+    position: absolute;
+    background: url(../images/bulk4lesslogo.png) center no-repeat;
+    width: 270px;
+    height: 200px;
+    border-radius: 10px;
+    left: -40px;
+    top: -10px;
+}
+
+/* Nav */
+
+nav{
+    position: relative;
+    top: 160px;
+}
+
+nav ul{
+  position: absolute; 
+  left: 300px; 
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav ul a{
+    color: white;
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+nav ul > li{
+    display: inline-block;
+    position: relative;
+    border: 1px white solid;
+    transition: all 0.8s ease;
+}
+
+nav ul > li:hover{
+    background-color:rgba(197, 197, 197, 0.7);
+}
+
+nav ul li ul{
+    position: absolute;
+    left: 0px;
+    top: 38px;
+}
+
+nav ul li ul > li{
+    display: list-item;
+    width: 200px;
+    margin-top: 1px;
+    margin-left: -1px;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+nav ul li:hover ul> li{
+    display: block;
+}
+
+nav ul li ul > li > a{
+    width: 170px;
+}
+
+/* Section "Introduction" */
+
+#into{
+    
+}
+
+.introduction{
+    float: left;
+    text-align: center;
+    width: 32%;
+    margin-top: 10px;
+    border: 2px rgb(255, 255, 255) solid;
+    margin-left: 9px;
+    border-radius: 5px;
+    height: 300px;
+}
+.introduction:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.intro-icon{
+    width: 100px;
+    height: 100px;
+    margin-top: 5px;
+}
+
+.intro-content{
+    margin-top: 20px;
+}
+
+.intro-content p{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 15px;
+}
+
