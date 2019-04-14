@@ -11,7 +11,7 @@ h3{
     color:rgba(0, 0, 0,0.7);
     font-size: 2em;
 }
-h4{}
+h4{color: rgba(0, 0, 0,0.7);}
 h5{}
 
 p{
@@ -46,6 +46,7 @@ li{
     margin-left: 2%;
     opacity: 0.5;
 }
+
 
 /***************** Header *********************/
 
@@ -267,15 +268,23 @@ nav ul li ul > li > a{
 /* Reviews Section */
 
 #reviews{
+    width: 100%;
+    float: left;
+    border-bottom: 1px white solid;
+    height: 400px;
+}
+#reviews::after{content: ""; display: block; clear: both;}
+
+#comment{
     position: relative;
     background: rgba(255, 255, 255, 0.3);
-    height: 300px;
+    height: 390px;
     width: 94%;
     margin-left: 3%;
-    float: left;
 }
 
-#reviews h3{
+#comment h3{
+    position: absolute;
     font-size: 2.5em;
     text-decoration: underline;
     padding: 10px 0px;;
@@ -285,6 +294,56 @@ nav ul li ul > li > a{
     margin-top: 10px;
     border-radius: 5px;
     text-align: center;
+}
+
+#c-num li{
+    display: inline-block;
+    width: 22%;
+    height: 200px;
+    background:  rgba(255, 255, 255, 0.5);
+    margin-top: 130px;
+    margin-left: 2.25%;
+    border-radius: 5px;
+}
+
+#c-num li h4{
+    margin-top: 10px;
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+
+/* Footer Section */
+
+#footer{
+    float: left;
+    position: relative;
+    width: 100%;
+    background: url(../images/footerbackground.jpg) no-repeat;
+    background-size: 100%;
+}
+
+#footer-div{
+    height: 300px;
+    background:  rgba(0, 0, 0, 0.9);
+}
+
+#socialmedia{
+    height: 80px;
+}
+#footlogo{
+    position: absolute;
+    background: url(../images/bulk4lessfooter.png) center no-repeat;
+    height: 80px;
+    width: 120px;
+    left: 10px;
+}
+
+#foot-border{
+    width: 96%;
+    margin-left: 2%;
+    margin-top: 5px;
+    border-bottom: 1px rgba(255, 255, 255, 0.5) solid;
 }
 
 /* Media Queries */
