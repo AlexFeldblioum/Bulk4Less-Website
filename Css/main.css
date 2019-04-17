@@ -336,7 +336,7 @@ nav ul li ul > li > a{
     background: url(../images/bulk4lessfooter.png) center no-repeat;
     height: 80px;
     width: 120px;
-    left: 10px;
+    left: 5%;
 }
 
 #foot-border{
@@ -346,6 +346,42 @@ nav ul li ul > li > a{
     border-bottom: 1px rgba(255, 255, 255, 0.5) solid;
 }
 
+#socialmedia ul{
+    position: absolute;
+    left: 70%;
+    top: 50px;
+}
+
+#socialmedia ul li{
+    display: inline-block;
+}
+
+#socialmedia ul li a{
+    font-size: 2em;
+    margin: 0px 10px;
+    text-align: center;
+}
+
+#socialmedia ul li a .fab{
+    height: 30px;
+    transition: 2s ease;
+}
+#socialmedia ul li a:hover .fab{
+    transform: rotateY(360deg);
+}
+
+ul .fb{
+color: #3b5999;
+}
+
+ul .ig{
+color: #e4405f;
+}
+ul .tw{
+color: #55acee;
+}
+ul .gh{
+}
 /* Media Queries */
 
 @media screen and (max-width:1150px){
