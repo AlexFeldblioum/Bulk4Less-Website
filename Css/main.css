@@ -109,6 +109,7 @@ nav ul li ul > li{
     margin-left: -1px;
     display: none;
     background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1;
 }
 
 nav ul li:hover ul> li{
@@ -117,6 +118,50 @@ nav ul li:hover ul> li{
 
 nav ul li ul > li > a{
     width: 170px;
+}
+
+/* Special Offers Section */
+
+#specials{
+    float: left;
+    background: url(../images/specialoffers.jpg) no-repeat center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    border-bottom: 2px white solid;
+}
+#specials:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#specials h3{
+    text-align: center;
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 6%;
+    border-radius: 5px;
+    color: rgb(255, 0, 0);
+    padding: 10px;
+    line-height: 1.5em;
+}
+
+#specials a{
+    background: rgba(255, 0, 0);
+    padding: 5px 10px;
+    font-size: 2em;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.7s ease;
+    color: rgb(255, 255, 255);
+    margin-top: 5px;
+    margin-left: 23%;
+    position: absolute;
+}
+
+#specials a:hover{
+    background: rgba(0, 0, 0, 0.8);
 }
 
 /* Section "Introduction" */
@@ -278,7 +323,7 @@ nav ul li ul > li > a{
 #comment{
     position: relative;
     background: rgba(255, 255, 255, 0.3);
-    height: 390px;
+    height: 350px;
     width: 94%;
     margin-left: 3%;
 }
@@ -304,6 +349,7 @@ nav ul li ul > li > a{
     margin-top: 130px;
     margin-left: 2.25%;
     border-radius: 5px;
+    position: relative;
 }
 
 #c-num li h4{
@@ -311,6 +357,16 @@ nav ul li ul > li > a{
     font-size: 1.5em;
     font-style: italic;
 }
+
+#c-num li .cust-review{
+    position: absolute;
+    background:  rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    width: 80%;
+    height: 100px;
+    margin: 20px 5% 0px 5%;
+    border-radius: 5px;
+} 
 
 
 /* Footer Section */
@@ -370,6 +426,8 @@ nav ul li ul > li > a{
     transform: rotateY(360deg);
 }
 
+/* Icons */
+
 ul .fb{
 color: #3b5999;
 }
@@ -382,6 +440,72 @@ color: #55acee;
 }
 ul .gh{
 }
+
+/* Footer Details */
+
+/*info*/
+
+#foot-info div{
+    float: left;
+    margin-top: 25px;
+}
+
+#foot-maininfo{
+    
+    margin-left: 5%;
+}
+
+#foot-maininfo p:nth-child(1){
+    margin-top: 0px;
+}
+
+#foot-maininfo p{
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+}
+
+/*hours*/
+
+#foot-hours{
+    margin-left: 10%;
+}
+
+#foot-hours p:nth-child(1){
+    margin-top: 0px;
+}
+
+#foot-hours p{
+    color: white;
+    font-size: 0.9em;
+    margin-top: 15px;
+}
+
+/*question*/
+
+#foot-question{
+    margin-left: 10%;
+}
+
+#foot-question p{
+    color: white;
+    font-size: .9em;
+}
+
+#foot-question li{
+    margin-top: 7px;
+    font-size: .9em;
+}
+
+#foot-question a:hover{
+    color: rgb(114, 114, 114);
+}
+
+footer{
+    margin: 180px 0px 0px 5%;
+    color:rgba(255, 255, 255, 0.5);
+    font-size: 0.7em;
+}
+
 /* Media Queries */
 
 @media screen and (max-width:1150px){
