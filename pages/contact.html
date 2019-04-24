@@ -7,6 +7,7 @@
     <title>B4L CONTACT</title>
     <link rel="stylesheet" type="text/css" href="../Css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Css/contact.css">
 </head>
 <body>
     <header>
@@ -36,22 +37,29 @@
     </header>
 
     <section id="contactinfo">
-        <h1>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-            @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-            @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-            @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-            @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-            @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-            @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-            @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-            @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-            @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-            @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-            @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-            @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-            @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-            @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-        </h1>
+        <div id="contact-container">
+            <form id="email">
+                <h3>Leave us a message.</h3>
+
+                <div class="contact-input">
+                    <input name="name" placeholder=" Your name...">
+                </div>
+
+                <div class="contact-input">
+                    <input name="email" placeholder=" Your email address...">
+                </div>
+
+                <div id="contact-message">
+                    <textarea name="message" cols="50" placeholder="Message..." data-field="2"></textarea>
+                </div>
+            </form>
+
+            <div id="phone">
+                <h3>Our Phone</h3>
+                <p>Office: </p>
+                <p>General: </p>      
+            </div>
+        </div>
     </section>
 
     <section id="footer">
@@ -72,13 +80,37 @@
             
             <div id="foot-border"></div>
             
-            <div>
+            <div id="foot-info">
+                <div id="foot-maininfo">
+                    <p>
+                        1234 Bulk St. <br>
+                        Toronto, Ontario
+                    </p>
+                    <p>Office: (416) 123-4567</p>
+                    <p>General: 1-(800) 123-4567</p>
+                    <p>Email: Inquire@bulk4less.com</p>
+                </div>
 
-            </div>
-            <div>
+                <div id="foot-hours">
+                        <p><u>OFFICE HOURS</u></p>
+                        <p>Mon - Fri: 8am - 7pm</p>
+                        <p>Sat: 10am - 5pm</p>
+                        <p>Sun: 10am - 3pm</p>
+                </div>
 
+
+                <div id="foot-question" >
+                    <p><u><em>INFO</em></u></p>
+                    
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
             </div>
-        <footer>dfdfdf</footer>
+        <footer>&copy; 2019 Bulk4Less Co.</footer>
         </div>
     </section>
 </body>

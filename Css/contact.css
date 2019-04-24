@@ -1,0 +1,71 @@
+#contactinfo{
+    height: 500px;
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+#contact-container{
+    width: 90%;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.5);
+    margin-top: 50px;
+    margin-left: 5%;
+    border-radius: 5px;
+    float: left;
+}
+
+#email{
+    float:left;
+}
+#email:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#contactinfo h3{
+    margin-top: 25px;
+    background: white;
+    padding: 10px 20px;
+    width: 325px;
+    border-radius: 5px;
+}
+
+#contact-container form{
+    margin-left: 25px;
+}
+
+.contact-input{
+    display: inline-block;
+    margin-top: 25px;
+}
+
+.contact-input input{
+    height: 30px;
+    width: 300px;
+    font-size: 1.2em;
+    margin: 0px 50px 0px 0px;
+    border: 1px solid rgba(141, 141, 141, 0.9)
+}
+
+input:focus, input:hover{
+    border: 1px solid #1900ff;
+}
+
+#contact-message textarea{
+    margin-top: 25px;
+    width: 657px;
+    height: 170px;
+    font-size: 1.2em;
+    border: 1px solid rgba(141, 141, 141, 0.9);
+    display: inline-block;
+}
+
+#contact-message textarea:focus, #contact-message textarea:hover{
+    border: 1px solid #1900ff;
+}
+
+#phone{
+    margin-left: 775px;
+}
