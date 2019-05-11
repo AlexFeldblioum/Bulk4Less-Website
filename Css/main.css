@@ -66,6 +66,15 @@ header #logo{
     top: -10px;
 }
 
+header .fa-bars{
+    position: absolute;
+    color: white;
+    font-size: 3em;
+    margin-left: 500px;
+    display: none;
+    margin-top: 110px;
+}
+
 header .fa-cart-arrow-down{
     position: absolute;
     margin-left: 975px;
@@ -92,6 +101,15 @@ header .fa-cart-arrow-down{
 nav{
     position: relative;
     top: 160px;
+}
+
+nav .fa-arrow-alt-circle-down{
+    position: absolute;
+    z-index: 1;
+    font-size: 1.5em;
+    top: 7px;
+    left: 508px;
+    display: none;
 }
 
 nav ul{
@@ -703,4 +721,57 @@ footer{
     nav ul{
         left: 0px;
       }
+}
+
+@media screen and (max-width:675px){
+
+    header .fa-cart-arrow-down{
+        margin-left: 395px;
+        margin-top: 0px;
+    }
+
+    header{
+        height: auto;
+        min-height: 200px;
+    }
+
+    header .fa-bars{
+        display: block;
+    }
+
+    nav{
+        position: relative;
+        /*
+        min-height: 363px;
+        
+        height: 563px;
+        */ 
+        display: none;
+        transition: 0.2s ease;
+    }
+
+    nav .fa-arrow-alt-circle-down{
+        display: block;
+    }
+
+    nav ul{
+        width: 100%;
+    }
+    
+    nav ul > li{
+        display: list-item;
+    }
+
+    nav ul li ul{
+        position: relative;
+        top: 0px;
+        display: none;
+    }
+
+    nav ul li ul > li{
+        width: 100%;
+        display: block;
+        z-index: 0;
+        
+    }
 }
