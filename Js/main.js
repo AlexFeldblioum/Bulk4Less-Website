@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 var toggleNavStatus = false;
 var toggleSubMenuStatus = false;
+var windowToggle = false;
 
 var menuButton = document.querySelector('.fa-bars');
 var navBar = document.querySelector('.navBar');
@@ -10,7 +11,6 @@ var subMenu = document.querySelector('.subMenu');
 
 
 menuButton.addEventListener('click', menuToggle);
-
 
 
     function menuToggle(){
@@ -22,16 +22,14 @@ menuButton.addEventListener('click', menuToggle);
             navBar.style.height = "363px";
 
         toggleNavStatus = true;
-       
+
 
         }else if(toggleNavStatus === true){
 
             navBar.style.display = "none";
-            navBar.style.height = "0px";
             subMenu.style.display = "none";
 
         toggleNavStatus = false;
-        toggleSubMenuStatus = false;
         }
 
         
@@ -39,14 +37,14 @@ menuButton.addEventListener('click', menuToggle);
 
     function subToggle(){
 
-        if(toggleSubMenuStatus === false){
+        if(toggleNavStatus === true && toggleSubMenuStatus === false){
             
             subMenu.style.display = "block";
             navBar.style.height = "563px";
 
             toggleSubMenuStatus = true;
 
-        }else if(toggleSubMenuStatus === true){
+        }else if(toggleNavStatus === true && toggleSubMenuStatus === true){
             
             subMenu.style.display = "none";
             navBar.style.height = "363px";
@@ -59,8 +57,61 @@ menuButton.addEventListener('click', menuToggle);
 
     window.addEventListener("resize", windowResize);
 
-    function windowResize(){}
+    function windowResize(){
+
+        var windowSize = window.innerWidth;
+
+
+        if(windowToggle === true && windowSize <= 675){
+            
+            navBar.style.display = "none";
+            subMenu.style.display = "none";
+        
+            toggleNavStatus = false;
+            windowToggle = false;
+
+            
+        }else if(windowSize > 675 && windowToggle === false){
+            subMenu.style.display = "block";
+            navBar.style.display = "block";
+            toggleNavStatus = null;
+
+            windowToggle = true; 
+        }
+    }
 })
+
+
+
+        /*
+                switch(windowToggle){
+
+        case 1: windowToggle === true 
+
+        if(windowSize <= 675){
+            
+            navBar.style.display = "none";
+            subMenu.style.display = "none";
+            
+            toggleNavStatus = false;
+            windowToggle = false;
+        }
+
+        
+
+        case 2: windowToggle === false
+
+        if(windowToggle === false){
+            subMenu.style.display = "block";
+            navBar.style.display = "block";
+            
+            windowToggle = true; 
+    }
+
+        break;
+
+        }
+ */
 
 /*
 

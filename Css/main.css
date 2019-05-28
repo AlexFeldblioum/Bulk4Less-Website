@@ -101,6 +101,7 @@ header .fa-cart-arrow-down{
 nav{
     position: relative;
     top: 160px;
+    display: block;
 }
 
 nav .fa-arrow-alt-circle-down{
@@ -739,7 +740,7 @@ footer{
         display: block;
     }
 
-    nav{
+    .navBar{
         position: relative;
         /*
         min-height: 363px;
